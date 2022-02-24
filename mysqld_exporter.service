@@ -10,7 +10,8 @@ Restart=always
 Environment="DATA_SOURCE_NAME=mysqld_exporter:M8UicoCGXEYf3XtQ@tcp(127.0.0.1:3306)/"
 ExecStart=/usr/local/bin/mysqld_exporter \
 --config.my-cnf /etc/.mysqld_exporter.cnf \
---collect.global_status
+--collect.global_status \
+--collect.info_schema.processlist
 
 [Install]
 WantedBy=multi-user.target
