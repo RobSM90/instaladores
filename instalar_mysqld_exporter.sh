@@ -13,5 +13,5 @@ chown root:prometheus /etc/.mysqld_exporter.cnf
 cd /etc/systemd/system
 wget https://raw.githubusercontent.com/RobSM90/instaladores/main/mysqld_exporter.service
 systemctl daemon-reload
-systemctl enable mysql_exporter
-systemctl start mysql_exporter
+systemctl enable mysqld_exporter
+systemctl start mysqld_exporter
